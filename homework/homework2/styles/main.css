@@ -79,14 +79,14 @@ body{
 .side-menu-item{
     box-sizing: border-box;
     padding: 30px 0 0 40px;
-    height: 80px;
+    height: 80px;   
 }
 
 .side-menu-item:hover {
     background-color: #DBDBDB;
-    height: 80px;
     color: black;
     padding-left: 73px;
+    transition: padding-left .5s;
 }
 
 .side-menu-text{
