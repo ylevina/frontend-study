@@ -5,19 +5,23 @@ body{
     color: white;
 }
 
-.main-block{
-    position: relative;
-    overflow: auto;
-    width: 1366px; 
+.background{
+    min-width: 1366px;
     background: url(../img/background.jpg);
     background-repeat: no-repeat;  
     background-size: cover;
 }
 
+.main-container{
+    width: 1027px;
+    margin: auto;
+}
+
 .header{
     position: relative;
     overflow: auto;
-    margin: 59px 151px 35px 151px;    
+    padding-top: 59px;
+    margin-bottom: 35px;
 }
 
 .logo{    
@@ -64,6 +68,7 @@ body{
     float: right;
     line-height: 21px;
     text-align: right;
+    margin-right: 1em;
 }
 
 #contacts-email{
@@ -77,19 +82,19 @@ body{
 .tour-gallery{
     position: relative;
     overflow: auto;
-    margin: 0 104px 0 158px;
-}
-
-.tour{
-    width: 300px;
-    float: left;
-    margin-right: 62px;
-    margin-bottom: 41px;   
+    text-align: justify;
 }
 
 .tour-link{
     text-decoration: none;
     color: white;
+    width: 300px;
+    float: left;
+    margin-bottom: 41px;
+}
+
+.tour-link:not(:nth-child(3n+3)){    
+    margin-right: 62px;
 }
 
 .tour-title{
@@ -141,8 +146,8 @@ body{
     margin-left: 120px;
 } 
 
-.tour-link:hover .tour-details-view-details::after{
-    content:'\003e';
+.tour-details-view-details::after{
+    content:'>';
     margin-left: 30px;
     margin-right: 10px;
 }
@@ -166,7 +171,7 @@ body{
 }
 
 #shopping-tours-image{    
-    background: url(../img/shopping_tours.png);    
+    background: url(../img/shopping_tours.jpg);    
     background-position: center;
     background-size: 103%;    
 }
@@ -203,11 +208,10 @@ body{
 
 .copyright{
     text-align: center;
-    margin-bottom: 15px;
+    padding-bottom: 15px;
 }
 
 .copyright-text{
     font-size: 12px;
     line-height: 21px;    
 }
-
