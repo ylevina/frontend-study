@@ -1,0 +1,52 @@
+.icon{
+    color:#848484;
+    margin: 0.5em;    
+}
+
+button{   
+    background: #484848;
+    border: 1px solid #484848;    
+    border-radius: 4px;
+    color: white;
+    text-transform: uppercase;
+    padding: 0.8em 0 0.2em 0;
+    font-weight: bold;
+    width: 75%;
+    transition: .5s;
+}
+
+button:hover{
+    transform: scale(1.2);
+    transition: .5s;
+}
+
+.btn-gray{
+    border-bottom: 8px solid #3d3d3d;
+}
+
+.bg-green, .btn-green {
+    background-color: #89C331;    
+}
+
+.btn-green{
+    border: 1px solid #89C331;
+    border-bottom: 8px solid rgb(128, 182, 47);
+}
+
+.bg-red, .btn-red{
+    background: #F04A56;    
+}
+
+.btn-red{
+    border: 1px solid #F04A56;
+    border-bottom: 8px solid rgb(218, 71, 81);
+}
+
+.bg-navy, .btn-navy{
+    background: #20807C;    
+}
+
+.btn-navy{
+    border: 1px solid #20807C;
+    border-bottom: 8px solid rgb(31, 121, 118);
+}

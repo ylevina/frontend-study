@@ -1,0 +1,52 @@
+th{
+    font-weight: bold;
+    background: #FAFAFA;
+}
+
+th>span{
+    display: block;
+}
+
+th, td{
+    border-collapse: collapse;
+    text-align: center;
+    border-left: 1px solid #48484841;
+    vertical-align: middle;
+    width: 280px;
+}
+
+tbody tr:nth-of-type(1n+1){
+    background: #F2F2F2;
+}
+
+tbody tr:nth-of-type(2n+2){
+    background: #E3E3E3;
+}
+
+tr>th:first-of-type, tr>td:first-of-type{
+    max-width: 313px;
+}
+
+tr>th:not(first-of-type), tr>td:not(first-of-type){
+    max-width: 280px;
+}
+
+tbody td{
+    padding: 0.8em 0;
+}
+
+tfoot td{
+    padding: 2em 0;
+}
+
+tfoot td:first-of-type{
+    background: #DDDDDD;
+}
+
+.buy-now:nth-of-type(1n+1){
+    background-color: #EEEEEE;
+} 
+
+.buy-now:nth-of-type(2n+1){
+    background: #F4F4F4;
+}

@@ -1,0 +1,46 @@
+.plan-option:nth-of-type(1n),
+.plan-option-value:nth-of-type(1n){
+    background: #F2F2F2;
+}
+
+.plan-option:nth-of-type(2n),
+.plan-option-value:nth-of-type(2n){
+    background: #E3E3E3;
+}
+
+.plan-option *, 
+.plan-option-value * {
+    display: block;
+    font-size: 24px;
+}
+
+td {     
+    border-collapse: collapse;
+    text-align: center;
+    border-bottom: 2px solid #4e4e4e2d;
+    vertical-align: middle;    
+}
+
+td:not(:first-of-type){
+    line-height: 1.5em;
+}
+
+th{
+    font-weight: bold;
+    background: #FAFAFA;
+    padding: 1em 0.6em;
+    vertical-align: bottom; 
+}
+
+thead tr{
+    border-bottom: 1em solid #3A4965;
+}
+
+th, td{
+    box-sizing: border-box;
+    width: 158px;
+}
+
+th:not(:first-of-type){
+    width: 160px;       
+}

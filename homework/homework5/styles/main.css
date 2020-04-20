@@ -1,0 +1,50 @@
+@import "../styles/reset.css";
+@import "../styles/fontawesome/css/all.min.css";
+@import "../styles/fonts.css";
+@import "../styles/shared.css";
+@import "../styles/table1.css";
+
+body{
+    font-family: 'Arimo', sans-serif;
+    text-transform: uppercase;
+    color: #484848;
+}
+
+.background{
+    box-sizing: border-box;
+    background: #3A4965;
+    padding: 25px;
+    margin: auto;
+    max-width: 1192px;
+}
+
+.plan{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 73px;
+    color: white;
+}
+
+.price-dollar, .price-sup{
+    display: inline-block;
+}
+
+.price-sup{    
+    position: relative;
+    bottom: 1em;
+    left: -0.7em;
+    font-size: 24px;
+}
+
+.price-cents{
+    text-align: left;
+}
+
+.per-month{
+    font-weight: normal;
+}
+
+.price{
+    padding-top: 0.5em;
+}

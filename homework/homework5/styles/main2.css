@@ -1,0 +1,70 @@
+@import "../styles/reset.css";
+@import "../styles/fontawesome/css/all.min.css";
+@import "../styles/fonts.css";
+@import "../styles/shared.css";
+@import "../styles/table2.css";
+
+body {
+    font-family: 'Arimo', sans-serif;
+    text-transform: uppercase;
+    color: #484848;
+}
+
+.background {
+    box-sizing: border-box;
+    background: #3A4965;
+    padding: 25px;
+    margin: auto;
+    max-width: 1197px;
+}
+
+.plan {
+    width: 198px;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 16px 0 34px;
+}
+
+.plan-name {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.price-dollar, .price-sup {
+    display: inline-block;
+}
+
+.price-dollar {
+    position: relative;
+    left: -0.2em;
+}
+
+.price-cents {
+    text-align: left;
+    position: relative;
+    left: -1.1em;
+    font-size: 18px;
+}
+
+.per-month {
+    font-size: 14px;
+    position: relative;
+    left: 0.7em;
+    bottom: 0.4em;
+}
+
+button {
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+th p {
+    margin-bottom: 5px;;
+}
