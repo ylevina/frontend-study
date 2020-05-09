@@ -1,22 +1,27 @@
-let userName = prompt("Please, enter your name", '');
+let userName;
+let userAge;
+const welcomeMessage = (userName) => `Welcome, ${userName}!`;
+const NOT_ALLOWED_MESSAGE = "You are not allowed to visit this website.";
+const ARE_YOU_SURE_MESSAGE = "Are you sure you want to continue?";
 
-if (Number(userName) || !userName) userName = prompt("Please, enter your name", userName);
+do {
+    userName = prompt("Please, enter your name", userName);
+    if (userName === null) break;
+    userAge = prompt("Please, enter your age", userAge);
+    if (userAge === null) break;
+} 
+while (!userName || Number(userName) || !Number(userAge));
 
-let userAge = prompt("Please, enter your age", '');
+if (userName && userAge) {
+    if (userAge < 18) alert(NOT_ALLOWED_MESSAGE);
 
-if (!Number(userAge)) userAge = prompt("Please, enter your age", userAge);
+    else if (userAge <= 22) {
+        if (confirm(ARE_YOU_SURE_MESSAGE)) alert(welcomeMessage(userName));
 
-if (userAge < 18) alert("You are not allowed to visit this website.");
+        else alert(NOT_ALLOWED_MESSAGE);
+    }
 
-else if (userAge >= 18 && userAge <= 22)
-{
-    const userAnswer = confirm("Are you sure you want to continue?");
-    
-    if (userAnswer) alert(`Welcome, ${userName}`);
-
-    else alert("You are not allowed to visit this website.");
+    else alert(welcomeMessage(userName));
 }
 
-else if (userAge > 22) alert(`Welcome, ${userName}`);
-
-else alert("You are not allowed to visit this website.");
+else alert(NOT_ALLOWED_MESSAGE);
