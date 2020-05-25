@@ -16,14 +16,10 @@ function createNewUser() {
         },
         getAge(){
             const dateNow = new Date();
-            const dayNow = dateNow.getDate();
             const yearNow = dateNow.getFullYear();
-
-            const birthdaySplit = birthday.split('.');   
-            const birthdayYear =  birthdaySplit[2];
-            const userDay = new Date(birthdayYear, birthdaySplit[1]-1, birthdaySplit[0]).getDate();
-
-            const userAge = userDay > dayNow? yearNow - birthdayYear - 1: yearNow - birthdayYear;
+            const birthdayDate = new Date(birthday.split('.').reverse().join('.'));
+            const birthdayYear = birthdayDate.getFullYear(); 
+            const userAge = birthdayDate.getDate() > dateNow.getDate() ? yearNow - birthdayYear - 1: yearNow - birthdayYear;
             return userAge;
         },
         getPassword(){
