@@ -1,0 +1,21 @@
+@import "reset.css";
+
+.price-form {
+    margin: 20px;
+};
+.price-form > *{
+    display: block;
+}
+.input-label, .current-price, .error{
+    display: block;
+    margin: 10px 0;
+}
+
+#price-input{
+    background-color: white;
+    border: 1px solid gray;   
+}
+
+input:focus{
+    outline-offset: 0px;    
+}
