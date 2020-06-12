@@ -6,19 +6,14 @@ function changeClass(event) {
     const li = event.target.closest("li");
     const tabs = Array.from(ul.children);
     const tabsContentItems = Array.from(document.querySelector(".tabs-content").children);
-    
-    tabs.forEach((tab, i) => {
-        tab.classList.remove(className);
-        tabsContentItems[i].classList.remove(className);
-    });
+       
+    const removeIndex = tabs.findIndex(element => element.classList.contains(className));
+    tabs[removeIndex].classList.remove(className);
+    tabsContentItems[removeIndex].classList.remove(className);
 
     li.classList.add(className);
-
-    tabs.forEach((tab, i) => {
-        if (tab.classList.contains(className)) { 
-            tabsContentItems[i].classList.add(className); 
-        }
-    });
+    const activeIndex = tabs.findIndex(element => element.classList.contains(className));
+    tabsContentItems[activeIndex].classList.add(className);   
 
     event.preventDefault();
 }
