@@ -1,0 +1,193 @@
+@import "reset.css";
+
+body{
+    font-family: 'Roboto', sans-serif;
+    color: black;
+}
+
+.main-block{
+    width: 1280px;
+    margin: 60px auto 20px;
+}
+
+.heading-logo-ramda{   
+    display: inline-block;
+    font-size: 82px;
+    margin-bottom: 45px;
+}
+
+.heading-logo-link{
+    text-decoration: none;
+    color: black;
+}
+
+.text-color{    
+    color: rgb(75, 202, 255);   
+}
+
+.header-block{
+    background-color: #35444F;
+    margin-bottom: 50px;
+    height: 72px; 
+}
+
+.header-menu{
+    text-align: center;
+    height: inherit; 
+}
+
+.header-menu-item{
+    box-sizing: border-box;
+    display: inline-block;
+    height: inherit;
+    text-align: center; 
+    padding: 22px 30px;   
+    border-right: transparent solid 1px;
+    border-left: transparent solid 1px;
+}
+
+.header-menu-item:hover{
+    background-color: #222F3A;
+    border-right: white solid 1px;
+    border-left: white solid 1px;
+}    
+       
+.header-menu-text{
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 24px;
+    font-weight: 400;
+    color: white
+}
+
+.central-block{    
+    margin-bottom: 50px;
+}
+
+.side-menu-block{
+    box-sizing: border-box;
+    display: inline-block;
+    width: 344px;
+    margin-right: 45px;
+    vertical-align: top;
+}
+
+.side-menu{    
+    box-sizing: border-box;
+    outline: #4958637e solid 1px;    
+}
+
+.side-menu-item{
+    box-sizing: border-box;
+    padding: 30px 0 0 40px;
+    height: 80px;   
+}
+
+.side-menu-item:hover {
+    background-color: #DBDBDB;
+    color: black;
+    padding-left: 73px;
+    transition: padding-left .5s;
+}
+
+.side-menu-text{
+    box-sizing: border-box;
+    text-decoration: none;    
+    text-transform: capitalize;
+    font-size: 28px;
+    font-weight: normal;
+    color: #495863;
+    height: 80px;
+}
+
+.content-block{
+    box-sizing: border-box;
+    display: inline-block;
+    width: 885px;
+}
+
+.ramda-image-block{
+    outline: #49586381 solid 1px;
+    margin-bottom: 50px;
+}
+
+.ramda-image{    
+    background-image: url(../img/ramda.png);
+    width: auto;
+    height: 539px;
+    background-repeat: no-repeat;
+    background-position: center; 
+    transition: transform .5s;   
+}
+
+.ramda-image:hover{
+    transform: scale(1.2);
+}
+
+.description{   
+    font-size: 18px;
+    line-height: 24px;
+    color: #2C2C2C;
+}
+
+.description:not(:last-of-type){
+    margin-bottom: 30px; 
+}
+
+.footer-block{
+    font-size: 1.8em;
+    font-weight: lighter;
+    display: inline-block;
+    width: 100%;
+    height: 69px;
+    background-color: rgba(99, 105, 110, 0.48);
+}
+
+.footer-menu{
+    display: inline-block;
+    margin: 20px 40px;
+}
+
+.footer-menu-item{
+    display: inline-block;
+    margin: 0 10px; 
+}
+
+.footer-menu-text{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: black;
+}
+
+.footer-menu-text:hover{    
+    color: rgb(44, 149, 180);
+    padding-bottom: 8px;
+    border-bottom: rgb(44, 149, 180) solid 1px;
+}
+
+.copyright{
+    display: inline-block;
+    box-sizing: border-box;
+    margin: 0 18px 0 80px;
+    font-size: 0.8em;
+    font-weight: normal;
+} 
+
+.btn-change-style{
+    display: inline-block;
+    margin: 20px 0;
+    padding: 20px;
+    color:white;
+    font-size: 2em;
+    background-color: rgb(44, 149, 180);
+    border: 1px solid rgb(44, 149, 180);
+}
+
+.btn-change-style:focus{
+    outline: none;
+}
+
+.logo-block{
+    display: flex;
+    justify-content: space-between;  
+}
