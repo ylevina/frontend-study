@@ -1,0 +1,119 @@
+.our-work-gallery {
+	display: grid;
+	grid-template-columns: repeat(4, 280px);
+	grid-template-rows: repeat(3, 1fr);
+	margin: 0 auto;
+	justify-content: center; 
+	width: 1200px;
+}
+.work-card {
+	text-align: center;
+	width: 280px;
+	height: 205px;
+	background: #ffff;
+}
+.flip-box {
+	perspective: 1500px;
+	width: 280px;
+    height: 205px;
+}
+.flip-box__flipper {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	transition: transform 2s;
+	transform-style: preserve-3d;
+}
+
+.flip-box__front {
+	position: absolute;
+	width: 100%;
+	height: 205px;
+	backface-visibility: hidden;
+}
+
+.flip-box__back {
+	position: absolute;
+	background: white;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+	transform: rotateY(180deg);
+}
+
+.flip-box:hover .flip-box__flipper {
+	transform: rotateY(180deg);
+}
+
+.hidden{
+	display: none;
+}
+
+.work-card-style{	
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-top: 2px solid white;
+}
+
+.work-card-style:hover{
+	border-top: 2px solid #18CFAB;
+}
+
+.work-card-style>*{
+	margin: 10px 0;
+}
+
+.work-card-buttons{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+.work-card-buttons *{
+	margin: 0 2px;
+}
+
+.work-card-description h3{
+	text-transform: uppercase;
+}
+.work-card-description p{
+	text-align: center;
+}
+
+.circle-small {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 41px;
+	height: 40px;
+	border: 1px solid #18CFAB;
+	border-radius: 30px;
+	color: #18CFAB;	
+}
+
+.circle-small.decorated{
+	background: #18CFAB;
+	color: white;
+}
+
+.circle-medium{
+	width: 58px;
+	height: 58px;
+	border: 5px solid #135e5786;
+	border-radius: 35px;
+	color: #18CFAB;
+}
+
+.circle-medium.active{
+	margin-bottom: 12px;
+}
+
+.circle-big {
+    width: 144px;
+	height: 142px;
+	border: 10px solid #135e5786;
+	border-radius: 105px;
+	color: #18CFAB;	
+}
