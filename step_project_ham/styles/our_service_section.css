@@ -24,11 +24,9 @@
     border: 1px solid #18CFAB;
     color: white;
 }
-
 .services-menu-item:hover{
     border: 1px solid #18CFAB;
 }
-
 .services-menu-item *{
     display: flex;
     flex-direction: column;
