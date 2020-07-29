@@ -28,22 +28,26 @@ const books = [
     }
 ];
 
-function validateFields(book) {
-    const requiredFields = ["author", "name", "price"];
-    requiredFields.forEach(field => {
-        if (!(field in book)) throw new Error(`Missing ${field} field!`);       
-    });
+const requiredFields = ["author", "name", "price"];
 
-    return `<ul>${Object.keys(book).map(key => key = `<li>${key}</li>`)}</ul>`;
+function validateBook(book, requiredFields) {
+    try {
+        requiredFields.forEach(field => {
+            if (!(field in book)) throw new Error(`Missing ${field} field!`);
+        });
+
+        return `<li>${book.author}, '${book.name}', ${book.price}</li>`;
+
+    } catch (error) {
+        console.log(error);
+    }
 }
 
-try {
-    books.map(book => book = `<li>${validateFields(book)}</li>`)
-} catch(error) {
-    console.log(error);
+function showValidBooks(books, requiredFields) {
+    const root = document.querySelector('#root');
+    const ul = document.createElement('ul');
+    ul.innerHTML = books.map(book => validateBook(book, requiredFields)).join('');
+    root.append(ul);
 }
 
-
-
-
-
+showValidBooks(books, requiredFields);
