@@ -36,6 +36,10 @@ class Programmer extends Employee {
         this._lang = lang;
     }
 
+    set salary(value) {
+        this._salary = value;
+    }
+
     get salary() {
         return this._salary*3;
     }
@@ -46,5 +50,9 @@ const programmer3 = new Programmer("Daniel", 35, 3500, ["js", "java"]);
 
 console.log(programmer1);
 console.log(programmer1.salary);
+programmer1.salary = 4000;
+console.log(programmer1.salary);
 console.log(programmer2);
 console.log(programmer3);
+
+
