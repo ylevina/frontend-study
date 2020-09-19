@@ -1,0 +1,101 @@
+{
+    "products": [ 
+        {
+            "id": 1,
+            "name": "Pumpkin And Shrimps Bowl",
+            "price": "13.99$",
+            "picture_url": "./img/chuttersnap--ps36yg89Lg-unsplash.jpg",
+            "product_code": "16729-043",
+            "color": "#866bf5"
+        },    
+        {
+            "id": 2,
+            "name": "Holly Guacamoly Bowl",
+            "price": "6.29$",
+            "picture_url": "./img/alison-marras-ElGnfom4tIw-unsplash.jpg",
+            "product_code": "51672-4147",
+            "color": "#164c22"
+        },      
+        
+        {
+            "id": 3,
+            "name": "Bali Bowl",
+            "price": "9.99$",
+            "picture_url": "./img/keri-liwi-jXPcz9ZGuFo-unsplash.jpg",
+            "product_code": "0378-4883",
+            "color": "#8e93c5"
+        },
+        {
+            "id": 4,
+            "name": "Chiken Noodles Bowl",
+            "price": "10.69$",
+            "picture_url": "./img/noahs-knight-5aCcwPXe5l0-unsplash.jpg",
+            "product_code": "67046-805",
+            "color": "#1bd4b6"
+        },
+        {
+            "id": 5,
+            "name": "Granolla Bowl",
+            "price": "6.19$",
+            "picture_url": "./img/fallon-michael-_d1K4GfapEk-unsplash.jpg",
+            "product_code": "0781-5986",
+            "color": "#731d8d"
+        },
+        {
+            "id": 6,
+            "name": "Hummus and Chickpea Bowl",
+            "price": "8.39$",
+            "picture_url": "./img/dan-counsell-MUNgJe3sXQ0-unsplash.jpg",
+            "product_code": "53329-923",
+            "color": "#0fad23"
+        },
+        {
+            "id": 7,
+            "name": "Pasta Bowl",
+            "price": "8.49$",
+            "picture_url": "./img/rui-silvestre-D3lKRy7A_FY-unsplash.jpg",
+            "product_code": "59567-001",
+            "color": "#f92cb2"
+        },
+        {
+            "id": 8,
+            "name": "Mexicana Bowl",
+            "price": "11.89$",
+            "picture_url": "./img/nick-karvounis-YmyFBvW7oG8-unsplash.jpg",
+            "product_code": "53441-311",
+            "color": "#1f81c3"
+        },
+        {
+            "id": 9,
+            "name": "Vegana Mix Bowl",
+            "price": "8.19$",
+            "picture_url": "./img/hermes-rivera-k-sTTFdcZek-unsplash.jpg",
+            "product_code": "59779-567",
+            "color": "#e5d18a"
+        }, 
+        {
+            "id": 10,
+            "name": "Chili Tofu Bowl",
+            "price": "10.29$",
+            "picture_url": "./img/alyssa-kowalski-97YFGmT3Cu8-unsplash.jpg",
+            "product_code": "63629-1318",
+            "color": "#21d27e"
+        },
+        {
+            "id": 11,
+            "name": "Yogurt And Fruits Bowl",
+            "price": "7.39$",
+            "picture_url": "./img/wesual-click-LymX5D2sSWM-unsplash.jpg",
+            "product_code": "44567-103",
+            "color": "#190f54"
+        },  
+        {
+            "id": 12,
+            "name": "Banana Cashew Bowl",
+            "price": "7.29$",
+            "picture_url": "./img/julian-hochgesang-1YsJ-d45ud0-unsplash.jpg",
+            "product_code": "57353-103",
+            "color": "#3e553c"
+        }   
+    ]
+}
