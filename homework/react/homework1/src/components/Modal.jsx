@@ -35,7 +35,7 @@ const Container = styled.div`
   width: 100%;
   height: 100%;
   overflow: auto; 
-  background-color: #312E2E;   
+  background-color: #312e2e9d;   
 `
 
 const Content = styled.div` 
