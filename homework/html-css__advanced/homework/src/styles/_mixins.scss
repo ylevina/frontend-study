@@ -1,0 +1,17 @@
+@mixin bp-min($width) {
+  @media screen and (min-width: $width) {
+    @content;
+  }
+}
+
+@mixin bp-max($width) {
+  @media screen and (max-width: $width) {
+    @content;
+  }
+}
+
+@mixin bp-within($min, $max) {
+  @media screen and (min-width: $min) and (max-width: $max){
+    @content;
+  }
+}

@@ -1,0 +1,97 @@
+.footer { 
+    padding: 2em 0;
+    color: white;
+    background: black;    
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        max-width: 684px;;
+        margin: 0 auto;
+
+        @media screen and (max-width: $bp-mobile - 1px) {        
+            max-width: 303px;  
+        }       
+    }
+
+    &__container>*{
+        margin-bottom: 1em;
+    }
+
+    &__title {
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 1.3em;
+    }
+
+    &__title::before {
+        content: "-";
+        margin-right: 0.3em;
+    }
+    
+    &__title::after {
+        content: "-";
+        margin-left: 0.3em;
+    }
+
+    &__description{
+        line-height: 1.5em;
+        text-align: center;
+
+    }
+    
+    &__social{
+        display: flex;
+        margin-bottom: 1em;
+
+
+        .social__link{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 34px;
+            height: 34px;
+            border: 2px solid white;
+            border-radius: 34px;
+            color: white;
+            margin: 0 0.5em;
+        }
+
+        .social__link--rss{
+            @extend .social__link;
+            border-color:#F8902E;
+            color: #F8902E;
+        }
+        .social__link--facebook{
+            @extend .social__link;
+            border-color:#39599F;
+            color: #39599F;            
+        }
+        .social__link--twitter{
+            @extend .social__link;
+            border-color:#45B0E3;
+            color: #45B0E3;
+            
+        }
+        .social__link--dribbble{
+            @extend .social__link;
+            border-color:#D97AB0;
+            color: #D97AB0;
+        }
+        .social__link--pinterest{
+            @extend .social__link;
+            border-color:#CC212C;
+            color: #CC212C;
+        }
+    }
+
+    &__contacts{
+        display: flex;      
+        .contacts__item:not(:last-of-type)::after{
+            content: "/";
+            margin: 0 0.5em; 
+        }
+    }   
+}

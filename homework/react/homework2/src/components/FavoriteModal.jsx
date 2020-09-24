@@ -20,6 +20,6 @@ FavoriteModal.propTypes = {
 FavoriteModal.defaultProps = {
   id: 'modal-favorite',
   closeButton: true,
-  header: 'Adding item to favorites list...',
-  text: 'Are you sure you want to add this item to favorites?' 
+  header: 'Adding item to the favorites list...',
+  text: 'Are you sure you want to add this item to the favorites?' 
 };

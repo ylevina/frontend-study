@@ -20,6 +20,6 @@ CartModal.propTypes = {
 CartModal.defaultProps = {
   id: 'modal-cart',
   closeButton: true,
-  header: 'Adding item to cart',
-  text: 'Are you sure you want to add this item to cart?'  
+  header: 'Adding item to the cart',
+  text: 'Are you sure you want to add this item to the cart?'  
 };

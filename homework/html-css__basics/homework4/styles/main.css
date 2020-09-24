@@ -1,0 +1,229 @@
+@import "../styles/reset.css";
+@import "../styles/checkbox.css";
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+}
+
+.background{
+    background: url(../img/background.jpg);
+    background-repeat: no-repeat;  
+    background-size: 100%;
+    width: auto;
+    height: 100vh;    
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.397);
+    padding: 1.5em 7em;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+    display: inline-block;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+h2{
+    font-size: 20px;
+    color: #434343;
+    text-transform: capitalize;
+}
+
+.link-green{
+    color: #3CB878;
+}
+
+.sign-up-content{
+    display: grid;
+    gap: 1em;
+}
+
+.sign-up-head{
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-buttons{
+   display: flex;
+   justify-content: space-between;
+}
+
+.navigation{
+    font-size: 1em;
+}
+
+.auth, .icons{
+    display: inline-block;
+}
+
+.icons span{
+    color: rgba(255, 255, 255, 0.925);
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.header-auth-link{
+    text-decoration: none;
+    color: white;
+}
+
+.hover-green:hover{    
+    color: #3CB878;
+}
+
+a{
+    text-decoration: none;
+}
+
+.label>*{
+    float: left;       
+}
+
+.label a{
+    color: #3CB878;
+}
+
+input[type="checkbox"] {
+    visibility: hidden;
+}
+
+.sign-up{
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 3px;
+    width: 444px;
+    padding: 25px 50px;
+    margin: 90px auto;
+    color: #434343;
+}
+
+button *{
+    display: inline-block;
+    font-size: 1em;
+}
+
+button .icon{
+    font-size: 20px;
+}
+
+input{
+    box-sizing: border-box;
+    font-size: 0.9em;
+    display: block;
+    padding: 1em;
+    color: #BEBEBE;
+    width: 100%;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #F2F2F2;
+    border-radius: 4px;
+}
+
+.create-account{
+    display: block;
+    background-color: #3CB878;
+    border: 1px solid #3CB878;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.social-auth-button span{
+    font-size: 20px;
+    color: white;
+}
+
+button{
+    padding: 1em;
+    font-size: 1em;
+    color: white;    
+}
+
+.btn-blue{
+    background-color: #305DB8;
+    border: 1px solid #305DB8;
+    border-radius: 5px;
+    width: 48%;
+}
+
+.btn-red{
+    background-color: #DF4A32;
+    border: 1px solid #DF4A32;
+    border-radius: 5px;
+    width: 48%;
+}
+
+.or-box{
+    display: flex;
+    justify-content: space-between;
+}
+
+.or{
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.line{    
+    width: 45%;
+    height: 1px;
+    background: rgba(211, 211, 211, 0.733);
+    margin-top: 10px;
+}
+
+.sign-up{
+    position: relative;
+}
+
+.green-square{
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    left: 0px;
+    top: 30px;
+    background: #3CB878;
+}
+
+.social-auth-name{
+    width: 70%;
+}
+
+.sign-up-form{
+    display: grid;
+    gap: 0.5em;
+}
+
+button{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.icon::after {
+    display: inline-block;
+    height: 22px;
+    width: 2px;
+    background: #0A162F;
+    mix-blend-mode: normal;
+    opacity: 0.1;
+}
+
+.fa-google-plus-g::after {
+    display: inline-block;
+    height: 22px;
+    width: 2px;
+    background: #2B0D09;
+    mix-blend-mode: normal;
+    opacity: 0.1;
+}

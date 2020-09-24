@@ -1,0 +1,278 @@
+@import "reset.css";
+@import "styles/fontawesome/css/all.min.css";
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1{
+    color: white;
+    font-size: 27px;
+    text-transform: uppercase;
+    padding: 1em;
+}
+
+h2{
+    text-transform: uppercase;
+    padding: 2em;
+    text-align: center;
+    font-size: 27px;
+    font-weight: bold;
+    color:#18B4CF;
+}
+
+h3{
+    color: #353A3D;
+    font-weight: bold;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    color:white;
+    background-color: #313131;
+}
+
+.site-name{
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.header-name{
+    padding: 15px;
+}
+
+ul li{
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 1em 0;
+    margin-right: 1em;
+}
+
+.header-search{
+    background: #000000;
+    padding: 20px;
+    margin-left: 20px;
+}
+
+.latest-news{
+    position: relative;    
+}
+
+.latest-news-background, 
+.latest-news-overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.latest-news-background{
+    background: url(../img/img_header-bg.jpeg) center center no-repeat;
+    background-size: cover;
+    z-index: 1
+}
+
+.latest-news-overlay{
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+
+.latest-news-content{
+    position: relative;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 7em 0;
+}
+
+button{
+    color: white;
+    font-size: 18px;
+    padding: 1em;
+    margin: 1em;
+    text-transform: capitalize;
+    width: 170px;
+}
+
+.btn-green{
+    background-color: #89CA62;
+    border: 2px solid #89CA62;
+}
+
+.btn-blue{
+    background-color: #14B9D5;
+    border: 2px solid #14B9D5;
+}
+
+main p{
+   color: #5B6469;
+   text-align: right;
+}
+
+.popular-posts{
+    background: #F2F2F2;
+}
+
+.popular-posts-gallery{
+    width: 1180px;
+    height: 840px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; 
+    margin: 0 auto;
+}
+
+.popular-posts-gallery h3{
+    box-sizing: border-box;
+    padding: 1em 0;
+    text-align: center;
+    background: white;
+}
+
+.post{
+    display: flex;
+    flex-direction: column;
+    margin: 0 30px 30px 0;
+}
+
+.clients{
+    background: url(../img/img_parallax-bg.jpeg);    
+    display: grid;
+    gap: 20px;
+    padding: 11em 0;
+}
+
+.color-white{
+    color: white;
+    font-size: 32px;
+    padding: 0;
+}
+
+.blue-line{
+    width: 60px;
+    height: 3px;
+    background: #18B4CF;
+    margin: 2em auto;
+}
+
+.client-gallery{
+    display: grid;
+    grid-auto-flow: column;
+    gap: 70px;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-rated-gallery{
+    display: grid;
+    grid-auto-flow: column;
+    justify-items: stretch;
+}
+
+.hot-news{
+    margin-bottom: 30px;
+}
+
+.hot-news-gallery{
+    max-width: 1100px;
+    display: grid;
+    gap: 30px;
+    grid-template-areas: 
+    "item1 item1 item1 item2"
+    "item3 item3 item4 item4"
+    "item5 item5 item6 item6"
+    "item7 item8 item8 item8";
+    margin: 0 auto;
+}
+
+.hot-news-gallery>div{
+    background: #F9F7F7;
+}
+
+.hot-news-gallery h3{
+    padding: 1.5em 0;
+}
+
+.hot-news-gallery p{
+    font-size: 14px;
+}
+
+.news-item-description{
+    padding-right: 1em;
+}
+
+.news-item1{
+    grid-area: item1;
+    display: grid;
+    grid-template-columns: 60% 40%
+}
+
+.news-item2{
+    grid-area: item2;
+}
+
+.news-item3{
+    grid-area: item3;
+}
+
+.news-item4{
+    grid-area: item4;
+}
+
+.news-item5{
+    grid-area: item5;
+}
+
+.news-item6{
+    grid-area: item6;
+}
+
+.news-item7{
+    grid-area: item7;
+}
+
+.news-item8{
+    grid-area: item8;
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+footer{
+    background: #000000;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 13px;
+    padding: 15px 0;
+}
+
+footer div{
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.text-centered{
+    text-align: center;
+}
+
+.right-aligned{
+    text-align: right;
+}
+
+.parallax{
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
